@@ -1,0 +1,13 @@
+header.header
+    img.header-gradient(srcSet='assets/images/hero-gradient.png')
+    nav.container.header-nav-container
+        include logo
+        ul.menu
+            each item in [{href: "/", title: "Home"}, {href:"#", title:"Services"}, {href:"#", title:"About"}, {href:"#", title:"Pages"}, {href:"#", title:"Blog"}, {href:"#", title:"Contact"}]
+                li.menu-item
+                    a(href=item.href).heading.heading--small.header-link= item.title
+        .tools
+            img(srcSet='assets/icons/icon-search.png')
+            img(srcSet='assets/icons/icon-bag.png')
+            button.button.button-signup Sign up
+    include hero

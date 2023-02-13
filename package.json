@@ -1,0 +1,13 @@
+{
+  "name": "pollock2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": " pug index.pug --pretty --watch",
+    "dev-css": "sass ./sass/app.scss ./styles/app.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

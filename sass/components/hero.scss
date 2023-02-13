@@ -1,0 +1,60 @@
+.hero {
+  padding: 20px 0;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px
+  }
+
+  &-content {
+    color: $text-white;
+  }
+
+  &-subtitle {
+    font-family: $secondary-font;
+    font-weight: 400;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  &-heading {
+    color: $text-white;
+    text-align: start;
+    margin-bottom: 50px;
+  }
+
+  &-desc {
+    margin-bottom: 70px;
+    font-weight: 400;
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &-image {
+    position: relative;
+    width: 100%;
+  }
+
+  .button-start {
+    padding: 18px 32px;
+  }
+
+  .button-learn {
+    padding: 18px 32px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $text-white;
+      color: $text-primary;
+    }
+  }
+}

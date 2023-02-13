@@ -1,0 +1,121 @@
+body {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 1;
+  color: $text-secondary;
+  background-color: white;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.multiple-background {
+  background-image: linear-gradient(to bottom, $background-secondary 0%, $background-secondary 30%, $background-primary 30%, $background-primary 100%);
+}
+
+.button {
+  all: unset;
+  background-color: $primary-color;
+  color: $text-white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: calc(24 / 15);
+  font-family: $secondary-font;
+  border-radius: 5px;
+  width: fit-content;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.tag {
+    all: unset;
+    background-color: $green;
+    color: $text-white;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: calc(24 / 15);
+    font-family: $secondary-font;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 4px 12px;
+    margin-right: 10px;
+}
+
+.heading {
+  color: $text-primary;
+  font-weight: 500;
+  font-family: $secondary-font;
+
+  &--biggest {
+    font-size: 72px;
+    line-height: calc(78 / 72);
+  }
+
+  &--bigger {
+    font-size: 64px;
+    line-height: calc(72 / 64);
+  }
+
+  &--big {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
+
+  &--large {
+    font-size: 42px;
+    line-height: calc(50 / 42);
+  }
+
+  &--normal {
+    font-size: 36px;
+    line-height: calc(46 / 36);
+  }
+
+  &--medium {
+    font-size: 24px;
+    line-height: calc(34 / 24);
+  }
+
+  &--small {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
+}
+
+.text {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+
+  &--small {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  &--xsmall {
+    font-size: 14px;
+    line-height: calc(22 / 14);
+  }
+}
+
+
